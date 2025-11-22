@@ -2,18 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>My example of embedding Python viz</title>
+    <title>Exploring 311 data in Python so you don't have to!</title>
 </head>
 <body>
 
-<h1>Sample Title</h1>
-<p>This is a sample paragraph introducing the visualizations.</p>
+<h1>There isn't a singular point to this site, I just want to show you that I sort of know what I'm doing.</h1>
+<p>This is a paragraph tag, which means you can write a paragraph and the chunk of css in the head section will dictate what it looks like. Similarly, you can create whatever tag you want and it'll act as a sort of "link" between your css style and what shows up in the html. The "p" tag is so-called "standard" html/css, but you can make a tag that's called "myspecialtag", and if it's between angled brackets in the html body section, it'll obey whatever css you describe for it in the head section. </p>
 
 <h2>Pygal Chart</h2>
-<iframe src="pygalEX.htm" width="100%" height="500px" style="border:none;"></iframe>
+<p> Here, remember that we took our 311 dataset, made a new table with agency, complaint type, and count, only keeping complaint types with greater than 2500 total entries, and then aggregated the data so that we could make a stacked bar chart showing complaint types and their counts across the dataset. Remember that you did this in Python and it created an html document for you. Because this html document has been uploaded to this repository, the html doc you're literally writing right now can call on it and embed it. Cool!
+</p>
+<iframe src="pygalEX.htm" width="75%" height="auto" style="border:none;"></iframe>
 
 <h2>GeoViews Map</h2>
-<iframe src="GeoviewsExample.html" width="100%" height="600px" style="border:none;"></iframe>
+<p> Here, remember that we grabbed all noise complaints from the 311 dataset and mapped them by NTA. This was also something that we handled entirely in Python, and an html doc was also exported for it. It was interactive to begin with, and it stays interactive as we embed it here. </p>
+<iframe src="GeoviewsExample.html" width="75%" height="auto" style="border:none;"></iframe>
 
 </body>
 </html>
