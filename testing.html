@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Exploring 311 data in Python so you don't have to!</title>
+
+    <!-- This is an html comment, oh yeah, hi, this is where you might add css for styling -->
+    <style>
+        body {
+            margin: 40px;
+            font-family: Helvetica, Arial, sans-serif;
+            color: #191970;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -12,11 +22,19 @@
 <h2>Pygal Chart</h2>
 <p> Here, remember that we took our 311 dataset, made a new table with agency, complaint type, and count, only keeping complaint types with greater than 2500 total entries, and then aggregated the data so that we could make a stacked bar chart showing complaint types and their counts across the dataset. Remember that you did this in Python and it created an html document for you. Because this html document has been uploaded to this repository, the html doc you're literally writing right now can call on it and embed it. Cool!
 </p>
-<iframe src="pygalEX.htm" width="750px" height="375px" style="border:none;"></iframe>
+<center> <!-- I'm doing a center thingy to center my viz -->
+    <iframe src="pygalEX.htm" width="750px" height="390px" style="border:none;"></iframe>
+</center>
 
 <h2>GeoViews Map</h2>
 <p> Here, remember that we grabbed all noise complaints from the 311 dataset and mapped them by NTA. This was also something that we handled entirely in Python, and an html doc was also exported for it. It was interactive to begin with, and it stays interactive as we embed it here. </p>
-<iframe src="GeoviewsExample.html" width="750px" height="610px" style="border:none;"></iframe>
+<center>
+    <iframe src="GeoviewsExample.html" width="750px" height="680px" style="border:none;"></iframe>
+</center>
 
+<br> <br> 
+
+Thanks for looking at my webpage. Hopefully things are clearer now. <a href = "https://portal.311.nyc.gov/" target = "_blank"> Here's a link</a> to NYC's 311 portal for reference. 
+    
 </body>
 </html>
